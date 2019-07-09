@@ -4,10 +4,8 @@ import android.content.Context;
 import android.util.Log;
 import com.example.week6_day1hw.model.datasource.gitpojo.RepoObject;
 import com.example.week6_day1hw.model.datasource.remote.RetrofitGit;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -27,7 +25,6 @@ public class GitReposActivityPresenter {
             @Override
             public void onResponse(Call<RepoObject[]> call, Response<RepoObject[]> response) {
 
-                Log.d("TAG", "HELLO");
                 RepoObject[] repoObject = response.body();
                 ((GitReposActivity)context).runOnUiThread(new Runnable() {
 

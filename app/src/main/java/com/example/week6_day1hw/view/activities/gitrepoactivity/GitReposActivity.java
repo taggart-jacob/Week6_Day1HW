@@ -7,7 +7,6 @@ import android.os.Bundle;
 import com.example.week6_day1hw.R;
 import com.example.week6_day1hw.model.datasource.gitpojo.RepoObject;
 import com.example.week6_day1hw.view.adapters.GitReposRecyclerViewAdapter;
-
 import java.util.ArrayList;
 
 

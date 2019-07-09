@@ -2,7 +2,6 @@ package com.example.week6_day1hw.model.datasource.gitpojo;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -41,8 +40,7 @@ public class RepoObject implements Parcelable
             return (new RepoObject[size]);
         }
 
-    }
-            ;
+    };
 
     protected RepoObject(Parcel in) {
         this.name = ((String) in.readValue((String.class.getClassLoader())));

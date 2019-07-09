@@ -1,10 +1,8 @@
 package com.example.week6_day1hw.view.activities.mainactivity;
 
 import android.util.Log;
-
 import com.example.week6_day1hw.model.datasource.gitpojo.ProfileGit;
 import com.example.week6_day1hw.model.datasource.remote.RetrofitGit;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -23,7 +21,6 @@ public class MainActivityPresenter{
             public void onResponse(Call<ProfileGit> call, Response<ProfileGit> response) {
                 ProfileGit profileGit = response.body();
                 mainActivityContract.returnGitProfile(profileGit);
-                Log.d("TAG", "HERE");
             }
 
             @Override

@@ -1,6 +1,5 @@
 package com.example.week6_day1hw.view.adapters;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +37,7 @@ public class GitReposRecyclerViewAdapter extends RecyclerView.Adapter<GitReposRe
         if (repoObject.getLanguage()!=null) {
             holder.tvRepoLanguage.setText(repoObject.getLanguage());
         } else{
-            holder.tvRepoLanguage.setText("Research (no language)");
+            holder.tvRepoLanguage.setText(R.string.research);
         }
         this.holder = holder;
     }
@@ -49,9 +48,7 @@ public class GitReposRecyclerViewAdapter extends RecyclerView.Adapter<GitReposRe
     }
 
     @Override
-    public void returnRepoObjects() {
-
-    }
+    public void returnRepoObjects() {}
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvRepoName;

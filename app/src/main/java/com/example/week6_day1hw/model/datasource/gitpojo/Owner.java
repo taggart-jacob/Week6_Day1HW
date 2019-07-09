@@ -2,7 +2,6 @@ package com.example.week6_day1hw.model.datasource.gitpojo;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -29,8 +28,7 @@ public class Owner implements Parcelable
             return (new Owner[size]);
         }
 
-    }
-            ;
+    };
 
     protected Owner(Parcel in) {
         this.login = ((String) in.readValue((String.class.getClassLoader())));

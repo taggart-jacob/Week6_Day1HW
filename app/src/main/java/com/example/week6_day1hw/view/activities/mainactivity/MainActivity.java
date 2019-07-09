@@ -1,13 +1,10 @@
 package com.example.week6_day1hw.view.activities.mainactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-
 import com.example.week6_day1hw.R;
 import com.example.week6_day1hw.model.datasource.gitpojo.ProfileGit;
 import com.example.week6_day1hw.view.activities.gitrepoactivity.GitReposActivity;
