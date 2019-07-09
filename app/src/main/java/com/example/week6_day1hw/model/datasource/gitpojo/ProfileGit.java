@@ -8,7 +8,6 @@ import com.google.gson.annotations.SerializedName;
 
 public class ProfileGit implements Parcelable
 {
-
     @SerializedName("login")
     @Expose
     private String login;
@@ -69,10 +68,6 @@ public class ProfileGit implements Parcelable
         this.publicRepos = ((Integer) in.readValue((Integer.class.getClassLoader())));
     }
 
-    /**
-     * No args constructor for use in serialization
-     *
-     */
     public ProfileGit() {
     }
 

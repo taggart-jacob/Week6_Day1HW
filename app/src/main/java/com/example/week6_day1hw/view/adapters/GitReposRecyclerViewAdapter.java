@@ -35,7 +35,11 @@ public class GitReposRecyclerViewAdapter extends RecyclerView.Adapter<GitReposRe
         RepoObject repoObject = repoObjects.get(position);
         holder.tvRepoName.setText(repoObject.getName());
         holder.tvRepoUser.setText(repoObject.getOwner().getLogin());
-        holder.tvRepoLanguage.setText(repoObject.getLanguage());
+        if (repoObject.getLanguage()!=null) {
+            holder.tvRepoLanguage.setText(repoObject.getLanguage());
+        } else{
+            holder.tvRepoLanguage.setText("Research (no language)");
+        }
         this.holder = holder;
     }
 
@@ -49,9 +53,7 @@ public class GitReposRecyclerViewAdapter extends RecyclerView.Adapter<GitReposRe
 
     }
 
-
     public class ViewHolder extends RecyclerView.ViewHolder {
-
         TextView tvRepoName;
         TextView tvRepoUser;
         TextView tvRepoLanguage;

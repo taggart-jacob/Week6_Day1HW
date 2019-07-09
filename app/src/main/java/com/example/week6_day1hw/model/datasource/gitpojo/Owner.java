@@ -37,10 +37,6 @@ public class Owner implements Parcelable
         this.type = ((String) in.readValue((String.class.getClassLoader())));
     }
 
-    /**
-     * No args constructor for use in serialization
-     *
-     */
     public Owner() {
     }
 

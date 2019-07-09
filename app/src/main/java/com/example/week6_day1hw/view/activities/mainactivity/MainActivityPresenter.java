@@ -30,8 +30,6 @@ public class MainActivityPresenter{
             public void onFailure(Call<ProfileGit> call, Throwable t) {
                 Log.e("TAG", t.getMessage());
             }
-
         });
-
     }
 }

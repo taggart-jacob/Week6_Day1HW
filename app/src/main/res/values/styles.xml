@@ -8,4 +8,35 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="HeadText">
+        <item name="android:textColor">#03C94F</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="RegularText">
+        <item name="android:textColor">#249CEB</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="MainRegularText">
+        <item name="android:textColor">#249CEB</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="MainHeadText">
+        <item name="android:textColor">#03C94F</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
