@@ -34,6 +34,6 @@ public class RetrofitGit {
         Call<ProfileGit> getGitObject(@Url String api_url);
 
         @GET
-        Call<RepoObject> getGitRepos(@Url String api_url);
+        Call<RepoObject[]> getGitRepos(@Url String api_url);
     }
 }

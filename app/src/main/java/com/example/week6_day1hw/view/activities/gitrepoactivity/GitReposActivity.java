@@ -27,16 +27,18 @@ public class GitReposActivity extends AppCompatActivity implements GitReposActiv
         setContentView(R.layout.activity_git_repos);
         rvRepos = findViewById(R.id.rvRepos);
         gitReposPresenter = new GitReposActivityPresenter(this);
-        gitReposPresenter.getRepoObjects();
-    }
+        gitReposPresenter.getRepoObjects(this, rvRepos);
 
+    }
 
     @Override
     public void returnGitRepos(ArrayList<RepoObject> repoObjects) {
+        /*Log.d("TAG", repoObjects.get(0).getLanguage());
         GitReposRecyclerViewAdapter gitReposRecyclerViewAdapter = new GitReposRecyclerViewAdapter(repoObjects);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         rvRepos.setLayoutManager(layoutManager);
-        rvRepos.setAdapter(gitReposRecyclerViewAdapter);
+        rvRepos.setAdapter(gitReposRecyclerViewAdapter);*/
 
     }
+
 }
