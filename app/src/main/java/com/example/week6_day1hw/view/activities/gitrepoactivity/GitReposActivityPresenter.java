@@ -26,7 +26,7 @@ public class GitReposActivityPresenter {
         this.gitReposActivityContract = gitReposActivityContract;
     }
 
-    public void getRepoObjects(Context context, RecyclerView rvRepos){
+    public void getRepoObjects(Context context){
         Log.d("TAG", "HELLO");
         RetrofitGit retrofitGit = new RetrofitGit();
         retrofitGit.getService().getGitRepos("https://api.github.com/users/taggart-jacob/repos").enqueue(new Callback<RepoObject[]>() {
@@ -40,10 +40,6 @@ public class GitReposActivityPresenter {
                         ArrayList<RepoObject> arrayList = new ArrayList<RepoObject>(Arrays.asList(repoObject));
                         gitReposActivityContract.returnGitRepos(arrayList);
                         Log.d("TAG", repoObject[0].getName()+" dsds");
-                        GitReposRecyclerViewAdapter gitReposRecyclerViewAdapter = new GitReposRecyclerViewAdapter(arrayList);
-                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(context);
-                        rvRepos.setLayoutManager(layoutManager);
-                        rvRepos.setAdapter(gitReposRecyclerViewAdapter);
                     }
                 });
             }
